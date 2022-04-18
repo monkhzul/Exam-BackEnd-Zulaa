@@ -5,13 +5,7 @@ const ListSchema = new Schema({
   name: {
     type: String,
     required: [true, "Name is must!"],
-  },
- 
-  date: {
-    type: Date,
-    required: [true, "Date is must!"],
   }
-
 });
 
 const List = mongoose.model("todo", ListSchema);
